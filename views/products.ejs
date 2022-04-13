@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <link rel="stylesheet" href="/css/products.css">
+</head>
+<body>
+    <% if (loggedin) { %>
+        <%- include("partials/navbar loggedin.ejs") %>
+       <% } else { %>
+       <%- include("partials/navbar.ejs") %>
+       <%} %>
+    <div class="small-container">
+        <div class="row row-2">
+            <h2>All Products</h2>
+            <select>
+                <option>Most relevent</option>
+                <option>Sort by Price</option>
+                <option>Sort by popularity</option>
+                <option>Sort by rating</option>
+            </select>
+        </div>    
+        <div class="row">
+            <div class="col-4">
+                <a href="/product1">
+                <img src="images/products/jacquemus Black Le Chiquito/image 1.jpeg">
+                <h4>Jacquemus Le Chiquito Leather tote bag</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star" style="color:goldenrod"></i>
+                    <i class="fa-solid fa-star" style="color:goldenrod"></i>
+                    <i class="fa-solid fa-star" style="color:goldenrod"></i>
+                    <i class="fa-solid fa-star" style="color:goldenrod"></i>
+                    <i class="fa-solid fa-star" style="color:goldenrod"></i>
+                    </div>
+                <p>£385.00</p>
+                </a>
+            </div>
+            <div class="col-4">
+                <img src="images/products/valentino garavani clutch/image 1.jpeg">
+                <h4>Valentino garavani vlogo clutch bag</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star" style="color:goldenrod"></i>
+                   <i class="fa-solid fa-star" style="color:goldenrod"></i>
+                    <i class="fa-solid fa-star" style="color:goldenrod"></i>
+                    <i class="fa-solid fa-star" style="color:goldenrod"></i>
+                    <i class="fa-solid fa-star-half" style="color:goldenrod"></i>
+                </div>
+                <p>£1740.00</p>
+            </div>
+            <div class="col-4">
+                <img src="images/products/burberry TB mini canvas shoulder/image 1.jpeg">
+                <h4>Burberry TB mini canvas shoulder bag</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star" style="color:goldenrod"></i>
+                    <i class="fa-solid fa-star" style="color:goldenrod"></i>
+                    <i class="fa-solid fa-star" style="color:goldenrod"></i>
+                    <i class="fa-solid fa-star" style="color:goldenrod"></i>
+                </div>
+                <p>£1250.00</p>
+            </div>
+            <div class="col-4">
+                <img src="images/products/coach Tabby Pillow Mini Cross-body/image 1.jpeg">
+                <h4>Coach Tabby Pillow Mini Leather cross-body bag</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star" style="color:goldenrod"></i>
+                    <i class="fa-solid fa-star" style="color:goldenrod"></i>
+                    <i class="fa-solid fa-star" style="color:goldenrod"></i>
+                    <i class="fa-solid fa-star-half" style="color:goldenrod"></i>
+                </div>
+                <p>£395.00</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4">
+                <img src="images/products/jacquemus linen-cotton Le Chiquito cross-body/image 1.jpeg">
+                <h4>Jacquemus Le Chiquito linen-cotton cross-body bag</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star" style="color:goldenrod"></i>
+                    <i class="fa-solid fa-star" style="color:goldenrod"></i>
+                    <i class="fa-solid fa-star" style="color:goldenrod"></i>
+                    <i class="fa-solid fa-star-half" style="color:goldenrod"></i>
+                </div>
+                <p>£385.00</p>
+            </div>
+            <div class="col-4">
+                <img src="images/products/marc jacobs snapshot cross-body/image 1.jpeg">
+                <h4>Marc Jacobs Snapshot cross-body bag</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star" style="color:goldenrod"></i>
+                    <i class="fa-solid fa-star" style="color:goldenrod"></i>
+                    <i class="fa-solid fa-star" style="color:goldenrod"></i>
+                    <i class="fa-solid fa-star" style="color:goldenrod"></i>
+                    <i class="fa-solid fa-star" style="color:goldenrod"></i>
+                </div>
+                <p>£335.00</p>
+            </div>
+            <div class="col-4">
+                <img src="images/products/aspinal of london micro lottie shoulder/image 1.jpeg">
+                <h4>Aspinal of London Micro Lottie shoulder bag</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star" style="color:goldenrod"></i>
+                    <i class="fa-solid fa-star" style="color:goldenrod"></i>
+                    <i class="fa-solid fa-star" style="color:goldenrod"></i>
+                    <i class="fa-solid fa-star-half" style="color:goldenrod"></i>
+                </div>
+                <p>£395.00</p>
+            </div>
+            <div class="col-4">
+                <img src="images/products/cartier double c de cartier/image 1.jpeg">
+                <h4>Cartier Double C de Cartier cross-body bag</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star" style="color:goldenrod"></i>
+                    <i class="fa-solid fa-star" style="color:goldenrod"></i>
+                    <i class="fa-solid fa-star" style="color:goldenrod"></i>
+                </div>
+                <p>£2070.00</p>                
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4">
+                <img src="images/products/jimmy choo varenne logo-embossed top handle/image 1.jpeg">
+                <h4>Jimmy Choo Varenne logo-embossed leather top handle bag</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star" style="color:goldenrod"></i>
+                    <i class="fa-solid fa-star" style="color:goldenrod"></i>
+                    <i class="fa-solid fa-star" style="color:goldenrod"></i>
+                    <i class="fa-solid fa-star-half" style="color:goldenrod"></i>
+                </div>
+                <p>£950.00</p>
+            </div>
+            <div class="col-4">
+                <img src="images/products/the kooples emily cross-body/image 1.jpeg">
+                <h4>The Kooples Emily cross-body minibag</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star" style="color:goldenrod"></i>
+                    <i class="fa-solid fa-star" style="color:goldenrod"></i>
+                    <i class="fa-solid fa-star" style="color:goldenrod"></i>                </div>
+                <p>£295.00</p>
+            </div>
+            <div class="col-4">
+                <img src="images/products/soeur nolan logo-embossed shoulder/image.jpeg">
+                <h4>Loewe Puzzle Leather shoulder minibag</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star" style="color:goldenrod"></i>
+                    <i class="fa-solid fa-star" style="color:goldenrod"></i>
+                    <i class="fa-solid fa-star" style="color:goldenrod"></i>                </div>
+                <p>£295.00</p>
+            </div>
+        </div>
+    </div>
+    <footer><%- include("partials/footer.ejs") %> </footer>
+</body>
+</html>

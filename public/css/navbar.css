@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+}
+
+.navbar{
+    top: 0;
+    height: 100px;
+    position: sticky;
+    background: #f2e0d5;
+    margin-bottom: 30px;
+    border-bottom: 3px solid #f97646;
+    z-index: 2;
+}
+.logo{
+    width: 80px;
+    height: 80px;
+    margin: 5px 5px;
+} 
+.search-bar{
+    margin-top: 30px;
+    margin-left: 30px;
+    border: 1px solid #f97646 !important;
+    border-top-left-radius: 20px !important;
+    border-bottom-left-radius: 20px !important;
+    border-top-right-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+    box-shadow: none !important;
+    height: 30px;
+    width: 100%;
+}
+
+.search-icon{
+    background: #f97646 !important;
+    border: #f97646 1px solid !important;
+    margin: 30px 9px 3px 0 !important;
+    border-top-left-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+    border-top-right-radius: 20px !important;
+    border-bottom-right-radius: 20px !important;
+    cursor: pointer;
+    height: 30px;
+    width: 35px;
+}
+.search-box{
+    display: inline-flex;
+    width: 45%;
+    height: 60px;
+}
+.fa-magnifying-glass{
+    margin-top: 5px;
+    margin-left: 5px;
+    color: #f1f3f4;
+}
+
+.menu-bar{
+    width: 55%;
+    height: 50px;
+    float: right;
+}
+.menu-bar ul{
+    display: inline-flex;
+    float: right;
+}
+
+.menu-bar ul li{
+    border: 1px solid #f2e0d5;
+    list-style-type: none;
+    padding: 30px 35px;
+    text-align: center;
+    background-color: #f2e0d5;
+    cursor: pointer;
+    height: fit-content;
+}
+.menu-bar ul li a{
+    text-decoration: none;
+    color: #f97646;
+    font-size: 17px;
+    font-weight: bold;
+}
+.fa-cart-shopping{
+    margin-right: 5px;
+}
+
+@media only screen and (max-width: 980px){
+    .navbar{
+        height: 180px;
+        border-bottom: 0;
+        width: fit-content; 
+    }
+    .search-box{
+        width: 100%;
+    }
+
+    .menu-bar{
+        width: fit-content;
+        height: fit-content;
+    }
+
+    .menu-bar ul{
+        width: fit-content;
+        float: left;
+       
+    }
+    .menu-bar ul li{
+        float: left;
+        width: max-content;
+    }
+    .fa-magnifying-glass{
+        margin-top: 5px;
+        margin-right: 5px;
+        color: #f1f3f4;
+    }
+
+}

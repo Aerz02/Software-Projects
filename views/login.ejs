@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+<link rel="stylesheet" href="./css/register&login.css">
+
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login to <%=shopName%></title>
+</head>
+<body>
+  <% if (loggedin) { %>
+    <%- include("partials/navbar loggedin.ejs") %>
+   <% } else { %>
+   <%- include("partials/navbar.ejs") %>
+   <%} %>
+  <h1>Login to <%=shopName%>
+  </h1>
+  <form class="multi-step-form" form-multi-step method="POST" action="/authenticateUser">
+    <div class="card" form-step>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" placeholder="Email" required>
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" placeholder="Password" required>
+      </div>
+      <input type="submit" name="login" id="login" value="Login">
+      <button><a class="register" href="/register">Create an account</a></button>
+      </div>
+  </form>
+  <%- include("partials/footer.ejs") %>
+</body>
+</html>
